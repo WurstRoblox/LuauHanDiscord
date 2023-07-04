@@ -2,7 +2,7 @@ local wrapper = {
     request = syn and syn.request or http and http.request or http_request or fluxus and fluxus.request or getgenv().request or request
 }
 function wrapper:send(wa,na,token)
-	local Response = requestfunc({
+	local Response = wrapper:request({
 		Url = "https://discord.com/api/v10/channels/"..wa.."/messages",
 		Method = "POST",
 		Headers = {
@@ -16,7 +16,7 @@ function wrapper:send(wa,na,token)
 	return Response.Body
 end
 function wrapper:s_send(wa,na,token)
-	local Response = requestfunc({
+	local Response = wrapper:request({
 		Url = "https://discord.com/api/v10/channels/"..wa.."/messages",
 		Method = "POST",
 		Headers = {
