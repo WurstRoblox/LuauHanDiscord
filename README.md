@@ -1,6 +1,6 @@
 # LuauHanDiscord
 LuauHanDiscord is a Luau Handicapped Discord wrapper
-## No Secret Documentation
+## No Secret Documentation(Recommended)
 ### Setup
 To setup the wrapper start your code with:     
 ```lua
