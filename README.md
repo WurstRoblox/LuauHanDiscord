@@ -19,7 +19,7 @@ Make sure your secret is not distributed, as anyone can find your token using yo
 To setup the wrapper start your code with:     
 ```lua
 local wrapper = loadstring(game:HttpGet("https://github.com/WurstRoblox/LuauHanDiscord/raw/main/wrapper.lua"))()
-wrapper:Connect("token", "your secret")
+wrapper:Connect("bot token", "your secret")
 ```
 ### Send message
 To send a message do this:     
